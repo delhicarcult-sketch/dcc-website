@@ -1,49 +1,82 @@
-export default function DelhiCarCulte() { const products = [ 'Car Seat Covers', 'Steering Covers', 'LED Lighting', 'Floor Matting', 'Car Accessories (All Types)' ];
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delhi Car Culte (DCC)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: white;
+    }
+    header {
+      background: linear-gradient(to right, #b30000, #000, #d4af37);
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 { font-size: 40px; }
+    header p { margin-top: 10px; }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .products {
+      padding: 40px;
+      text-align: center;
+    }
+    .products h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+    .product-box {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      background: #111;
+      border: 1px solid red;
+      border-radius: 10px;
+    }
+    footer {
+      background: #b30000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body><header>
+  <h1>Delhi Car Culte (DCC)</h1>
+  <p>Premium Car Seat Covers & Accessories</p>
+  <a class="btn" href="https://wa.me/918076886709">Order on WhatsApp</a>
+</header><section class="products">
+  <h2>Our Products</h2>  <div class="product-box">Car Seat Covers</div>
+  <div class="product-box">Steering Covers</div>
+  <div class="product-box">LED Lighting</div>
+  <div class="product-box">Floor Matting</div>
+  <div class="product-box">All Car Accessories</div>
+</section><footer>
+  <h3>Contact Us</h3>
+  <p>WhatsApp: 8076886709</p>
+</footer></body>
+</html>
+  <div class="product-box">Car Seat Covers</div>
+  <div class="product-box">Steering Covers</div>
+  <div class="product-box">LED Lighting</div>
+  <div class="product-box">Floor Matting</div>
+  <div class="product-box">All Car Accessories</div>
+</section>
 
-return ( <div className="min-h-screen bg-black text-white font-sans"> {/* Hero Section */} <section className="bg-gradient-to-r from-red-700 via-black to-yellow-600 p-8 text-center"> <h1 className="text-5xl font-bold tracking-wide">Delhi Car Culte (DCC)</h1> <p className="mt-4 text-lg">Premium Car Seat Covers & Accessories</p> <a
-href="https://wa.me/918076886709"
-className="inline-block mt-6 px-6 py-3 bg-red-600 rounded-2xl shadow-lg hover:scale-105 transition"
-> Order on WhatsApp </a> </section>
+<footer>
+  <h3>Contact Us</h3>
+  <p>WhatsApp: 8076886709</p>
+</footer>
 
-{/* Products */}
-  <section className="p-8">
-    <h2 className="text-3xl font-bold text-yellow-500 mb-6">Our Products</h2>
-    <div className="grid md:grid-cols-3 gap-6">
-      {products.map((product, index) => (
-        <div
-          key={index}
-          className="bg-zinc-900 border border-red-600 rounded-2xl p-6 shadow-lg hover:scale-105 transition"
-        >
-          <h3 className="text-xl font-semibold text-red-500">{product}</h3>
-          <p className="mt-2 text-gray-300">
-            High-quality premium accessories for your car.
-          </p>
-        </div>
-      ))}
-    </div>
-  </section>
-
-  {/* About */}
-  <section className="p-8 bg-zinc-950">
-    <h2 className="text-3xl font-bold text-yellow-500 mb-4">Why Choose DCC?</h2>
-    <p className="text-gray-300 leading-7">
-      We provide premium quality seat covers, steering covers, LED setups,
-      floor matting, and all types of car accessories with stylish fitting
-      and durable quality.
-    </p>
-  </section>
-
-  {/* Contact */}
-  <footer className="bg-red-800 p-6 text-center">
-    <h3 className="text-2xl font-bold">Contact Us</h3>
-    <p className="mt-2">WhatsApp: 8076886709</p>
-    <a
-      href="https://wa.me/918076886709"
-      className="inline-block mt-4 px-5 py-2 bg-yellow-500 text-black rounded-xl font-semibold"
-    >
-      Chat Now
-    </a>
-  </footer>
-</div>
-
-); }
+</body>
+</html>
