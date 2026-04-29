@@ -1,82 +1,138 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delhi Car Culte (DCC)</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: white;
-    }
-    header {
-      background: linear-gradient(to right, #b30000, #000, #d4af37);
-      padding: 40px;
-      text-align: center;
-    }
-    header h1 { font-size: 40px; }
-    header p { margin-top: 10px; }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: red;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    .products {
-      padding: 40px;
-      text-align: center;
-    }
-    .products h2 {
-      color: gold;
-      margin-bottom: 20px;
-    }
-    .product-box {
-      display: inline-block;
-      width: 250px;
-      margin: 15px;
-      padding: 20px;
-      background: #111;
-      border: 1px solid red;
-      border-radius: 10px;
-    }
-    footer {
-      background: #b30000;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body><header>
-  <h1>Delhi Car Culte (DCC)</h1>
-  <p>Premium Car Seat Covers & Accessories</p>
-  <a class="btn" href="https://wa.me/918076886709">Order on WhatsApp</a>
-</header><section class="products">
-  <h2>Our Products</h2>  <div class="product-box">Car Seat Covers</div>
-  <div class="product-box">Steering Covers</div>
-  <div class="product-box">LED Lighting</div>
-  <div class="product-box">Floor Matting</div>
-  <div class="product-box">All Car Accessories</div>
-</section><footer>
-  <h3>Contact Us</h3>
-  <p>WhatsApp: 8076886709</p>
-</footer></body>
-</html>
-  <div class="product-box">Car Seat Covers</div>
-  <div class="product-box">Steering Covers</div>
-  <div class="product-box">LED Lighting</div>
-  <div class="product-box">Floor Matting</div>
-  <div class="product-box">All Car Accessories</div>
-</section>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCC - Premium Car Interior</title>
+    <style>
+        :root {
+            --brand-orange: #ff6b00; /* Flyer wala orange shade */
+            --dark-black: #000000;
+            --gray-bg: #111111;
+            --text-light: #f4f4f4;
+        }
 
-<footer>
-  <h3>Contact Us</h3>
-  <p>WhatsApp: 8076886709</p>
-</footer>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark-black);
+            color: var(--text-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2072');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-orange);
+        }
+      
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 4px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--brand-orange);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Services List */
+        .services-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .service-title {
+            color: var(--brand-orange);
+            border-left: 5px solid var(--brand-orange);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .service-item {
+            background: var(--gray-bg);
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s;
+            border: 1px solid #222;
+        }
+
+        .service-item:hover {
+            border-color: var(--brand-orange);
+            background: #1a1a1a;
+        }
+
+        /* Contact Section */
+        .footer-info {
+            background: #050505;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .btn-book {
+            background: var(--brand-orange);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            border-radius: 2px;
+            margin-top: 20px;
+            text-transform: uppercase;
+                                                              }
+              .contact-details {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>DCC</h1>
+        [span_0](start_span)<p>Your Trusted Car Seat Cover & Interior Designer[span_0](end_span)</p>
+    </section>
+
+    <div class="services-section">
+        <h2 class="service-title">Our Services</h2>
+        [span_1](start_span)<div class="service-item"><span>Custom Seat Covers[span_1](end_span)</span> <span>➔</span></div>
+        [span_2](start_span)<div class="service-item"><span>Custom Steering Wheel[span_2](end_span)</span> <span>➔</span></div>
+        [span_3](start_span)<div class="service-item"><span>Leather Wrapping & Soft Touch[span_3](end_span)</span> <span>➔</span></div>
+        [span_4](start_span)<div class="service-item"><span>Interior Clean & Vacuum[span_4](end_span)</span> <span>➔</span></div>
+        [span_5](start_span)<div class="service-item"><span>All Types of Car Accessories[span_5](end_span)</span> <span>➔</span></div>
+        [span_6](start_span)<div class="service-item"><span>Wax and Polish Treatment[span_6](end_span)</span> <span>➔</span></div>
+    </div>
+    
+    <footer class="footer-info">
+        <h3>Location</h3>
+        <p>114, Main Chowk, opp. [span_7](start_span)Ram Lila Ground, Block 2,<br>Geeta Colony, Delhi, 110031[span_7](end_span)</p>
+
+        [span_8](start_span)<a href="https://wa.me/918076886709" class="btn-book">Book an Appointment[span_8](end_span)</a>
+
+        <div class="contact-details">
+            <strong>Contact Us:</strong><br>
+            95405 41893 | [span_9](start_span)8076886709[span_9](end_span)
+        </div>
+    </footer>
 
 </body>
 </html>
